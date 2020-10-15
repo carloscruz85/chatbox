@@ -42,6 +42,10 @@ const App = () => {
               return <div key={i} onClick={ ()=> setArrow( {...arrow, question: i, questionAnswer: c[question]} ) } className="item alert alert-info" style={{'animationDelay': `${animation}s`}}>{question}</div>
            })
          }
+         {/* Whatsapp */}
+          <div>
+          <a className="btn btn-warning mb-3 mt-1" href="https://wa.me/+503-79229225?text=I'm%20interested%20in%20in%20tourism%20information%20">Talk to agent</a>
+          </div>
           {/* back to questions */}
           <div className="button" onClick={ () => setArrow( {...arrow, category: -1} ) } className="btn btn-dark">Back</div>
         </div>
