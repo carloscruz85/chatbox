@@ -1,1 +1,27 @@
 @import "../../styles/index.scss";
+
+body{
+    padding-top: 1rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+@keyframes FadeIn { 
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  
+    85% {
+      opacity: 1;
+      transform: scale(1.025);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .item {
+    animation: FadeIn 1s linear;
+    animation-fill-mode: both;
+  }
+
