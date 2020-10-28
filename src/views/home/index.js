@@ -4,9 +4,9 @@ import Data from "../../assets/data/data.json";
 
 const App = () => {
   // arrow to control the current languaje, category and answer
-  const [arrow, setArrow] = useState({lg: 1, category:-1, question: -1, questionAnswer: 'null'})
+  const [arrow, setArrow] = useState({lg: 1, category:0, question: -1, questionAnswer: 'null'})
 
-  const animationRatio = 0.3;
+  const animationRatio = 0.1;
 
   //console.log(Data[arrow.lg].welcome);
   return <div className="container">
